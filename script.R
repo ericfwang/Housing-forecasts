@@ -48,7 +48,6 @@ library(zoo)
 library(fredr)
 library(wbstats)
 library(forcats)
-library(rjson)
 
 # Code -------------------------------------------------------------------------------------
 # House sales and construction spending are both major macroeconomic indicators.
