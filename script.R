@@ -4,7 +4,7 @@
 #  1. House sales: https://www.zillow.com/research/data/ (Zillow: "Sales Count and Price Cuts")
 #  2. Private residential construction spending in millions: https://fred.stlouisfed.org/series/PRRESCONS (Federal Reserve)
 # Academic reference:
-#  1. Hyndman and Athanasopoulos's Forecasting: principles and practice, 2nd edition (2018)
+#  1. Hyndman and Athanasopoulos's Forecasting: Principles and Practice, 2nd edition (2018)
 # ------------------------------------------------------------------------------------------
 # Header -----------------------------------------------------------------------------------
 # Path
