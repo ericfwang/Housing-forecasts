@@ -50,9 +50,8 @@ library(wbstats)
 library(forcats)
 
 # Code -------------------------------------------------------------------------------------
-# House sales and construction spending are both major macroeconomic indicators.
-# For example, construction spending can help serve as a proxy variable for the
-# economic effects of the COVID epidemic.
+# House sales and construction spending are both major macroeconomic indicators. Intuitively,
+# we can expect that construction spending ought to be a lead indicator of house sales.
 
 # Import, format fields, and filter to NY
 sales_df <- read_csv(paste0(DATAROOT, "Metro_sales_count_now_uc_sfrcondo_month.csv")) %>% 
@@ -134,7 +133,7 @@ checkresiduals(model2)
 
 # Create the forecast
   
-  # First, forecast spending using ARIMA, which will be used as a model input
+  # First, forecast construction spending using ARIMA, which will be used as a model input
   prelim_forecast <- auto.arima(train[, 'spending'], ic = "aicc",
                                 stepwise = FALSE, approximation = FALSE) %>% 
     forecast(h = next_steps)
