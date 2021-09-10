@@ -187,7 +187,7 @@ plot <- autoplot(forecast
     caption = paste0("Note: Dynamic regression with ARIMA(2,0,0)(0,1,0)[12] errors. First, I regressed house sales in NY onto",
     " private residential construction spending \nusing ARIMA errors. Then, I used that model to forecast house sales twelve months", 
     " ahead from February 2018 to January 2019 using \nanother ARIMA forecast of construction spending. My final forecast is in blue",
-    " with shaded 95% prediction intervals. The forecast's MAPE was ", percent((100 - accuracy[2, 5])/100, accuracy = 0.1) , ".")
+    " with shaded 95% prediction intervals. The forecast's MAPE was ", round(accuracy[2, 5], digits = 2) , ".")
   )
 plot
 golden_ratio <- (1 + sqrt(5))/2
